@@ -10,8 +10,8 @@ body {
 
 #body-container {
     display: flex;
-    justify-content: flex-start;
-    margin: 25px;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 #form-container {
@@ -97,10 +97,87 @@ a {
 fieldset {
     margin-top: 15px;
     border-style: none;
+    border-bottom: 2px solid rgb(230, 230, 230);
+    padding-bottom: 50px;
 }
 
 legend {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 30px;
+    margin-bottom: 20px;
+}
+
+label {
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.inputs-name,.date-and-email {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-name, .input-last-name, .input-date, .input-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-name > input,
+.input-last-name > input, 
+.input-date > input,
+.input-email > input  {
+    width: 220px;
+}
+
+.address {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.address > input {
+    height: 50px;
+}
+
+input:focus {
+    border:#0C75FF solid 2px;
+    outline: none;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+input {
+    height: 50px;
+    border:  rgb(230, 230, 230) solid 2px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.button {
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 50px;
+}
+
+button {
+    height: 55px;
+    width: 160px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #0C75FF;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+button:hover {
+    transition: 1s;
+    background-color: #85b4f1;
+    cursor: pointer;
 }
