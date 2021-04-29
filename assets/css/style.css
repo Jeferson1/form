@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9fb;
+}
+
+#body-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 25px;
+}
+
+#form-container {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+    padding-left: 80px;
+    padding-right: 100px;
+}
+
+img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+nav {
+    margin-top: 80px;
+    width: 500px;
+    border-bottom:2px solid rgb(233, 233, 233);
+    padding-bottom: 30px;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li {
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    width: 120px;
+}
+
+li > div {
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.signup-option {
+    background-color: #0C75FF;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.message-option {
+    background-color: #f9f9fb;
+    color: darkslategrey;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400
+}
+
+.checkbox-option {
+    background-color: #f9f9fb;
+    color: darkslategrey;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400
+}
+
+a {
+    text-decoration: none;
+    color: darkslategrey;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.signup-option + a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700
+}
+
+#signup {
+    margin-top: 50px;
+}
+
+.step {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(119, 107, 107);
+}
+
+fieldset {
+    margin-top: 15px;
+    border-style: none;
+}
+
+legend {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
