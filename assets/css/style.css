@@ -1,3 +1,5 @@
+/* =========Main========== */
+
 * {
     padding: 0;
     margin: 0;
@@ -34,11 +36,11 @@ nav {
     padding-bottom: 30px;
 }
 
-nav > ul {
+ul {
     display: flex;
 }
 
-nav > ul > li {
+li {
     display: flex;
     margin-right: 15px;
     align-items: center;
@@ -51,25 +53,30 @@ li > div {
     margin-right: 10px;
 }
 
-.signup-option {
+.option-current {
     background-color: #0C75FF;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
-.message-option {
+.option-current + a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700
+}
+
+.options {
     background-color: #f9f9fb;
     color: darkslategrey;
     font-family: 'Roboto', sans-serif;
     font-weight: 400
 }
 
-.checkbox-option {
-    background-color: #f9f9fb;
-    color: darkslategrey;
+.options-checked {
+    background-color: #a8bcd6;
+    color: white;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400
+    font-weight: 400;
 }
 
 a {
@@ -79,12 +86,7 @@ a {
     font-weight: 400;
 }
 
-.signup-option + a {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700
-}
-
-#signup {
+#form {
     margin-top: 50px;
 }
 
@@ -108,14 +110,47 @@ legend {
     margin-bottom: 20px;
 }
 
+.button {
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.next-step {
+    height: 55px;
+    width: 160px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #0C75FF;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.next-step:hover {
+    transition: 1s;
+    background-color: #85b4f1;
+    cursor: pointer;
+}
+
+#back {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-right: 60px;
+}
+
+/* =========Main========== */
+
+/* =========Sign UP========== */
+
 label {
     line-height: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    cursor: pointer;
 }
 
-.inputs-name,.date-and-email {
-    margin-top: 30px;
+.inputs-name, .date-and-email {
     display: flex;
     justify-content: space-between;
 }
@@ -160,24 +195,85 @@ input {
     font-weight: 400;
 }
 
-.button {
-    display: flex;
-    justify-content:flex-end;
-    margin-top: 50px;
+/* =========Sign UP========== */
+
+/* ================= message ================= */
+
+legend + label {
+    display: block;
 }
 
-button {
-    height: 55px;
-    width: 160px;
-    border-radius: 5px;
-    border-style: none;
-    background-color: #0C75FF;
-    color: #ffffff;
+textarea {
+    border:  rgb(230, 230, 230) solid 2px;
     font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
-button:hover {
-    transition: 1s;
-    background-color: #85b4f1;
+textarea:focus {
+    border:#0C75FF solid 2px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+textarea:hover{
     cursor: pointer;
 }
+
+textarea + ul > li {
+    margin-right: 15px;
+    align-items: center;
+    width: 200px;
+}
+
+input {
+    margin-right: 5px;
+}
+
+/* ================= message ================= */
+
+/* ================= checkbox ================= */
+
+.checkbox-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.checkbox-images [type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox-images [type=radio] + img {
+    height: 130px;
+    width: 240px;
+    border-radius: 5px;
+    border:  rgb(230, 230, 230) solid 2px;
+    background-color:rgb(251, 251, 251);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.checkbox-images [type=radio]:checked + img {
+    background-color:#89bafa;
+    
+}
+
+.checkbox-list {
+    flex-direction: column;
+    width: 100%;
+}
+
+.checkbox-list > li {
+    width: 100%;
+}
+
+/* ================= checkbox ================= */

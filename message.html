@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="./assets/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div id="body-container">
+        <aside class="background-image">
+            <img src="./assets/images/side pg 2.png" alt="">
+        </aside>
+        <div id="form-container">
+            <nav>
+                <ul>
+                    <li>
+                        <div class="options-checked"><i class="fas fa-check"></i>
+                        </div>
+                        <a href="./index.html">
+                            Sign Up
+                        </a>
+                    </li>
+                    <li>
+                        <div class="option-current">2</div>
+                        <a href="">
+                            Message
+                        </a>
+                    </li>
+                    <li>
+                        <div class="options">3</div>
+                        <a href="./checkbox.html">
+                            Checkbox
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <form id="form" action="">
+                <p class="step">Step 2/3</p>    
+                <fieldset form="message" name="inputs">
+                    <legend>Message</legend>
+                    <label for="text-message">Message</label>
+                    <textarea 
+                        name="textarea-message" 
+                        id="text-message" 
+                        cols="55" 
+                        rows="10">
+                    </textarea>
+                    <ul>
+                        <li>
+                            <input type="radio" id="number-one" name="option">
+                            <label for="number-one">The Number one choice</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="number-two" name="option">
+                            <label for="number-two">The number two choice</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div class="button">
+                    <a id="back" href="./index.html">Back</a>
+                    <a id="next-step" href="./checkbox.html">
+                        <button class="next-step" type="button">Next Step</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
